@@ -5,7 +5,7 @@ COPY --from=watchdog /fwatchdog /usr/bin/fwatchdog
 RUN chmod +x /usr/bin/fwatchdog
 
 WORKDIR /home/app
-COPY ./function/static .
+COPY ./function .
 
 ENV mode="static"
 ENV static_path="/home/app"
