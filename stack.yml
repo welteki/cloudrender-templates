@@ -1,0 +1,8 @@
+provider:
+  name: openfaas
+  
+functions:
+  static:
+    lang: cr-static
+    handler: ./template/cr-static/function
+    image: ghcr.io/${OWNER:-welteki}/cr-static:${TAG:-latest}
